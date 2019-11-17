@@ -53,7 +53,6 @@ class Graph extends React.Component {
         color: {
           color: '#fff',
         },
-        font: '12px arial #fff',
       },
       nodes:{
         color: '#ff0000',
