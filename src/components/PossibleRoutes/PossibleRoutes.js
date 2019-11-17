@@ -36,7 +36,8 @@ class PossibleRoutes extends React.Component {
       this.setState(() => ({ errorMessage: 'Please enter the route. e.g AB or ED etc...' }));
       return false;
     }
-    const pathsCount = graphService.totalroutes(routeInput[0], routeInput[1], allowedWeight, maxStops);
+    debugger;
+    const pathsCount = graphService.totalroutes(routeInput[0], routeInput[1], parseInt(allowedWeight), parseInt(maxStops));
     this.setState(() => ({ totalPaths: pathsCount }));
   }
 
